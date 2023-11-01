@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double n, l, r;
+    const double pi = 3.14159265358;
+    
+    cin >> n >> l;
+    
+    r = l / (2 * sin(pi / n));
+    
+    r *= 100;
+    r = (int) r;
+    r /= 100;
+    
+    cout << fixed << setprecision(2) << r;
+
+    return 0;
+}
